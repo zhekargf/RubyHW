@@ -2,6 +2,7 @@ require_relative 'pet'
 
 class TAMAGOTCHI
   COMMANDS = ['play', 'feed', 'go_to_sleep', 'poop', 'wash', 'walk', 'bathe', 'water', 'observe', 'help']
+
   def start
     launch_pet
     
@@ -49,8 +50,8 @@ class TAMAGOTCHI
   end
 
   def command
-    aCommand = ['Give a command to the puppy or type "help".', 'What will be your next command?', 'I am at your service!', 'What would you like to do now?', '', '', '', 'What now?', 'Your order:']
-    puts aCommand[rand(aCommand.size)]
+    a_command = ['Give a command to the puppy or type "help".', 'What will be your next command?', 'I am at your service!', 'What would you like to do now?', '', '', '', 'What now?', 'Your order:']
+    puts a_command[rand(a_command.size)]
     order = gets.chomp.downcase
   end
 end
